@@ -8,16 +8,14 @@ import java.util.Objects;
 
 @Entity
 public class Customer {
-    private @Id
-    @GeneratedValue
-    Integer id;
+    private @Id @GeneratedValue Long id;
 
 
-    private HashMap<String, Double> purchases;
+    public HashMap<String, Double> purchases = new HashMap<>();
     private String name;
     private Customer (){};
     //    private Double points;
-//
+
 //
 //    private Double totalDollars;
     public Customer(String name, HashMap<String,Double> purchases){
@@ -41,7 +39,7 @@ public class Customer {
         this.purchases = purchases;
     }
     //
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
     //    public Double getPoints() {
@@ -90,4 +88,12 @@ public class Customer {
         return Objects.hash(id);
     }
 
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", purchases=" + purchases +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

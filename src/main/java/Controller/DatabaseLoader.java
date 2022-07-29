@@ -20,7 +20,7 @@ public class DatabaseLoader implements CommandLineRunner {
     }
 
     @Override
-    public void run(String...strings) {
+    public void run(String...strings) throws Exception{
 
         purchases.put("02/12", 14.25);
         purchases.put("02/15", 1.25);
@@ -40,6 +40,6 @@ public class DatabaseLoader implements CommandLineRunner {
         purchases.put("04/22", 3.45);
         purchases.put("04/29", 6.98);
         purchases.put("04/30", 1.32);
-        this.repository.save(new Customer("Grace Thompson",purchases));
+        this.repository.save(new Customer("Grace Thompson", purchases));
     }
 }
