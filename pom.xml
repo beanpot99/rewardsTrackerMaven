@@ -56,6 +56,22 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>internal.repo</id>
+			<name>Github Repo</name>
+			<url>https://github.com/beanpot99/rewardsTrackerMaven</url>
+		</repository>
+	</distributionManagement>
+
+
+<!--		<server>-->
+<!--			<id>github</id>-->
+<!--			<username>beanpot99</username>-->
+<!--			<password> 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-->
+<!--			</password>-->
+<!--		</server>-->
+<!--	-->
 
 	<build>
 		<plugins>

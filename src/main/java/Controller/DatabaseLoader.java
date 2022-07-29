@@ -1,8 +1,10 @@
 package Controller;
 
+import model.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+import repositories.CustomerRepository;
 
 import java.util.HashMap;
 
